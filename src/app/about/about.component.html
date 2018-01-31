@@ -1,4 +1,7 @@
 <p>
   about works!
   ok go back <a (click)="sendMeHome()"> click here </a>
+  <span class="life-container" *ngFor="let goal of goals;let i=index" (click)="removeItem(i)">
+    {{goal}}
+  </span>
 </p>
